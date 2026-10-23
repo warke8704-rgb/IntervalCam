@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">كاميرا بالفاصل الزمني</string>
+    <string name="interval_hint">الفترة بين الصور (بالثواني)</string>
+    <string name="choose_folder">اختيار مجلد الحفظ</string>
+    <string name="no_folder">لم يتم اختيار مجلد بعد</string>
+    <string name="folder_prefix">المجلد: %s</string>
+    <string name="start">بدء التصوير</string>
+    <string name="stop">إيقاف التصوير</string>
+    <string name="note">بعد الضغط على «بدء التصوير» يمكنك الخروج من التطبيق والعمل على تطبيقات أخرى؛ سيستمر التصوير بالكاميرا الخلفية ويظهر إشعار دائم يمكنك منه الإيقاف.</string>
+    <string name="err_interval">أدخل فترة صحيحة (0.5 ثانية أو أكثر)</string>
+    <string name="err_folder">اختر مجلد الحفظ أولاً</string>
+    <string name="err_camera">لا يمكن التصوير بدون إذن الكاميرا</string>
+    <string name="started">بدأ التصوير</string>
+    <string name="stopped">تم إيقاف التصوير</string>
+    <string name="notif_channel">التصوير في الخلفية</string>
+    <string name="notif_title">التصوير يعمل</string>
+    <string name="notif_text">عدد الصور: %1$d (كل %2$s ثانية)</string>
+    <string name="notif_stop">إيقاف</string>
+    <string name="err_folder_access">تعذّر الكتابة في المجلد المختار، اختر مجلداً آخر</string>
+</resources>
