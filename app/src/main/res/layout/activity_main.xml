@@ -10,14 +10,73 @@
         android:orientation="vertical"
         android:padding="24dp">
 
-        <EditText
-            android:id="@+id/etInterval"
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/interval_hint"
-            android:importantForAutofill="no"
-            android:inputType="numberDecimal"
-            android:text="2" />
+            android:text="@string/mode_label" />
+
+        <RadioGroup
+            android:id="@+id/rgMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbPhoto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/mode_photo" />
+
+            <RadioButton
+                android:id="@+id/rbVideo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/mode_video" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/llPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etInterval"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/interval_hint"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:text="2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llVideo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/video_quality_label" />
+
+            <Spinner
+                android:id="@+id/spQuality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/cbAudio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/video_audio" />
+        </LinearLayout>
 
         <Button
             android:id="@+id/btnFolder"

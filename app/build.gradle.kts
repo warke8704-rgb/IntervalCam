@@ -11,8 +11,8 @@ android {
         applicationId = "com.example.intervalcam"
         minSdk = 26
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 2
+        versionName = "1.1"
     }
 
     buildTypes {
@@ -40,4 +40,5 @@ dependencies {
     implementation("androidx.camera:camera-core:$camerax")
     implementation("androidx.camera:camera-camera2:$camerax")
     implementation("androidx.camera:camera-lifecycle:$camerax")
+    implementation("androidx.camera:camera-video:$camerax")
 }
